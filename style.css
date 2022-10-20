@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+.card {
+    border-radius: 15px;
+    width: 400px;
+    background-color: #FFFFFF;
+    margin: 20px auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.top_card {
+    display: flex;
+    align-items: center;
+}
+
+.profil_pick {
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 0.8em;
+    color: #2F2F2F;
+}
+
+.img_container {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.post_content {
+    width: 725px;
+    transform: translateX(-173px);
+    cursor: pointer;
+}
+
+.bottom_card {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.fa-regular {
+    font-size: 1.5em;
+    margin-right: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.fa-solid {
+    display: none;
+    color: #EF606B;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.heart_animation {
+    animation-name: like;
+    animation-duration: 0.5s;
+}
+
+.hearts {
+    display: flex;
+    position: relative;
+}
+
+@keyframes like {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.4);}
+    100% {transform: scale(1);}
+}
